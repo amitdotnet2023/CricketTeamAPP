@@ -1,0 +1,70 @@
+<div class="container">
+    <div class="row" style="margin-top: 2px;">
+        <div class="col-12">
+            <form [formGroup]="CriketRegFrom" (ngSubmit)="submitRegistration()">
+                <div class="row">
+                    <div class="col-6">
+
+                        <div class="mb-3">
+                            <label for="firstName" class="form-label">First Name:</label>
+                            <input type="text" id="firstName" formControlName="firstName" class="form-control">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="lastName" class="form-label">Last Name:</label>
+                            <input type="text" id="lastName" formControlName="lastName" class="form-control">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="totalMatchesPlayed" class="form-label">Total Matches Played:</label>
+                            <input type="number" id="totalMatchesPlayed" formControlName="totalMatchesPlayed"
+                                class="form-control">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="contactNumber" class="form-label">Contact Number:</label>
+                            <input type="tel" id="contactNumber" formControlName="contactNumber" class="form-control">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email:</label>
+                            <input type="email" id="email" formControlName="email" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="mb-3">
+                            <label for="dateOfBirth" class="form-label">Date of Birth:</label>
+                            <input type="date" id="dateOfBirth" formControlName="dateOfBirth" class="form-control">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="height" class="form-label">Height:</label>
+                            <input type="number" id="height" formControlName="height" class="form-control">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="weight" class="form-label">Weight:</label>
+                            <input type="number" id="weight" formControlName="weight" class="form-control">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="role" class="form-label">Role:</label>
+                            <select id="role" formControlName="role" class="form-select">
+                                <option value="">Select Role</option>
+                                <option value="Team Coach">Team Coach</option>
+                                <option value="captain">Captain</option>
+                                <option value="Player">Player</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label></label>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+        <div class="col-6"></div>
+    </div>
+</div>
